@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/891/891419.png" type="image/png">
+  <title>Samo_1596_Online_Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <navbar>
+    <h1 style="text-align: center; color: darkblue;">Samo1596_Online-Store</h1>
+  </navbar>
+  <div class="sami">
+    <header>
+      <img src="sami_logo.png" alt="Store Logo" class="store-logo">
+      <!-- Welcome Text -->
+  <h2 id="welcome-text" style="
+  text-align: center;
+  color: cadetblue;
+  margin-top: 20px;
+  font-size: 26px;
+  font-family: 'Segoe UI', sans-serif;
+  "></h2>
+  <img src="shopping-icon.webp" alt="Store Logo" class="store-logo">
+      <a href="help.html" target="_blank"><button id="help-button" onclick="openHelp()">❓ Help</button>
+      </a> 
+  
+    </header>
+  </diV>
+  
+    <div class="filters">
+      <button onclick="filterProducts('all')">All</button>
+      <button onclick="filterProducts('electronics')">Electronics</button>
+      <button onclick="filterProducts('clothes')">Clothes</button>
+      <button onclick="filterProducts('accessories')">Accessories</button>
+      <button onclick="filterProducts('shoes')">Shoes</button>
+      <button onclick="filterProducts('bags')">Bags</button>
+      <button onclick="filterProducts('makeup')">Makeup</button>
+      <button onclick="filterProducts('perfumes')">Perfumes</button> 
+    </div>
+  
+
+  <main class="products" id="product-list">
+    
+    <!-- Products -->
+    <div class="product" data-category="electronics">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>Wireless Earbuds</h3>
+      <p>High quality sound with long battery life.</p>
+      <div class="price">Rs. 2,499</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <button onclick="sendOrder(this, 'Wireless Earbuds', 2499)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message">Your order has been confirmed! You will receive it in 3 to 6 days.AND again visit Plz relOad web</div>
+      </div>
+    </div>
+
+    <div class="product" data-category="electronics">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>Smart Watch</h3>
+      <p>Fitness tracking, calls, and more features.</p>
+      <div class="price">Rs. 3,999</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <button onclick="sendOrder(this, 'Smart Watch', 3999)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message">Your order has been confirmed! You will receive it in 3 to 6 days. AND again visit Plz relOad web</div>
+      </div>
+    </div>
+
+    <div class="product" data-category="clothes">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>Men's T-Shirt</h3>
+      <p>Comfortable and stylish cotton t-shirt.</p>
+      <div class="price">Rs. 999</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <input type="number" placeholder="Enter your size number" class="size-input"> <!-- Size input added -->
+        <button onclick="sendOrder(this, 'Men\'s T-Shirt', 999)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message">Your order has been confirmed! You will receive it in 3 to 6 days. AND again visit Plz relOad web </div>
+      </div>
+    </div>
+    <div class="product" data-category="clothes">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>Men's jacet</h3>
+      <p>Comfortable and stylish cotton t-shirt.</p>
+      <div class="price">Rs. 999</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <input type="number" placeholder="Enter your size number" class="size-input"> <!-- Size input added -->
+        <button onclick="sendOrder(this, 'Men\'s T-Shirt', 999)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message">Your order has been confirmed! You will receive it in 3 to 6 days. AND again visit Plz relOad web </div>
+      </div>
+    </div>
+   
+    <div class="product" data-category="clothes">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>WOMen's T-Shirt</h3>
+      <p>Comfortable and stylish cotton t-shirt.</p>
+      <div class="price">Rs. 999</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <input type="number" placeholder="Enter your size number" class="size-input"> <!-- Size input added -->
+        <button onclick="sendOrder(this, 'Men\'s T-Shirt', 999)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message">Your order has been confirmed! You will receive it in 3 to 6 days. AND again visit Plz relOad web </div>
+      </div>
+    </div>
+    <div class="product" data-category="clothes">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>Men's pant Shirt</h3>
+      <p>Comfortable and stylish cotton t-shirt.</p>
+      <div class="price">Rs. 999</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <input type="number" placeholder="Enter your size number" class="size-input"> <!-- Size input added -->
+        <button onclick="sendOrder(this, 'Men\'s T-Shirt', 999)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message">Your order has been confirmed! You will receive it in 3 to 6 days. AND again visit Plz relOad web </div>
+      </div>
+    </div>
+
+
+
+    <div class="product" data-category="accessories">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>Mobile Cover</h3>
+      <p>Stylish and durable mobile cover for all models.</p>
+      <div class="price">Rs. 499</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <button onclick="sendOrder(this, 'Mobile Cover', 499)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message">Your order has been confirmed! You will receive it in 3 to 6 days.AND again visit Plz relOad web</div>
+      </div>
+    </div>
+    <div class="product" data-category="accessories">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>Mobile cLASS Cover</h3>
+      <p>Stylish and durable mobile cover for all models.</p>
+      <div class="price">Rs. 499</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <button onclick="sendOrder(this, 'Mobile Cover', 499)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message">Your order has been confirmed! You will receive it in 3 to 6 days.AND again visit Plz relOad web</div>
+      </div>
+    </div>
+
+    <div class="product" data-category="shoes">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>Men Shoes</h3>
+      <p>Stylish and durable shoes for all models.</p>
+      <div class="price">Rs. 1,999</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <input type="number" placeholder="Enter your size number" class="size-input"> <!-- Size input added -->
+        <button onclick="sendOrder(this, 'Men Shoes', 1999)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message">Your order has been confirmed! You will receive it in 3 to 6 days.AND again visit Plz relOad web</div>
+      </div>
+    </div>
+    <div class="product" data-category="shoes">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>Men LEATHErs Shoes</h3>
+      <p>Stylish and durable shoes for all models.</p>
+      <div class="price">Rs. 1,999</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <input type="number" placeholder="Enter your size number" class="size-input"> <!-- Size input added -->
+        <button onclick="sendOrder(this, 'Men Shoes', 1999)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message">Your order has been confirmed! You will receive it in 3 to 6 days.AND again visit Plz relOad web</div>
+      </div>
+    </div>
+    <div class="product" data-category="shoes">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>WOMen Shoes</h3>
+      <p>Stylish and durable shoes for all models.</p>
+      <div class="price">Rs. 1,999</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <input type="number" placeholder="Enter your size number" class="size-input"> <!-- Size input added -->
+        <button onclick="sendOrder(this, 'Men Shoes', 1999)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message">Your order has been confirmed! You will receive it in 3 to 6 days.AND again visit Plz relOad web</div>
+      </div>
+    </div>
+    <div class="product" data-category="shoes">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>WOMen 5 Shoes</h3>
+      <p>Stylish and durable shoes for all models.</p>
+      <div class="price">Rs. 1,999</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <input type="number" placeholder="Enter your size number" class="size-input"> <!-- Size input added -->
+        <button onclick="sendOrder(this, 'Men Shoes', 1999)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message">Your order has been confirmed! You will receive it in 3 to 6 days.AND again visit Plz relOad web</div>
+      </div>
+    </div>
+   
+    <div class="product" data-category="jewelry">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>Gold Plated Necklace</h3>
+      <p>Elegant design perfect for any outfit.</p>
+      <div class="price">Rs. 1,799</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <button onclick="sendOrder(this, 'Gold Plated Necklace', 1799)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message">Your order has been confirmed! You will receive it in 3 to 6 days. AND again visit Plz reload web</div>
+      </div>
+    </div>
+    <div class="product" data-category="bags">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>Leather Handbag</h3>
+      <p>Elegant and durable handbag perfect for everyday style.</p>
+      <div class="price">Rs. 3,499</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <button onclick="sendOrder(this, 'Leather Handbag', 3499)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message">Your order has been confirmed! You will receive it in 3 to 6 days.</div>
+      </div>
+    </div>
+    <div class="product" data-category="bags">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>Leather womeN Handbag</h3>
+      <p>Elegant and durable handbag perfect for everyday style.</p>
+      <div class="price">Rs. 3,499</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <button onclick="sendOrder(this, 'Leather Handbag', 3499)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message">Your order has been confirmed! You will receive it in 3 to 6 days.</div>
+      </div>
+    </div>
+    <div class="product" data-category="bags">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>Leather 6 Handbag</h3>
+      <p>Elegant and durable handbag perfect for everyday style.</p>
+      <div class="price">Rs. 3,499</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <button onclick="sendOrder(this, 'Leather Handbag', 3499)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message">Your order has been confirmed! You will receive it in 3 to 6 days.</div>
+      </div>
+    </div>
+    <div class="product" data-category="bags">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>fabric Handbag</h3>
+      <p>Elegant and durable handbag perfect for everyday style.</p>
+      <div class="price">Rs. 3,499</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <button onclick="sendOrder(this, 'Leather Handbag', 3499)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message">Your order has been confirmed! You will receive it in 3 to 6 days.</div>
+      </div>
+    </div>
+  
+    <!-- Lipstick Set -->
+    <div class="product" data-category="makeup">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>Matte Lipstick Set</h3>
+      <p>Pack of 5 long-lasting matte lipsticks in bold shades.</p>
+      <div class="price">Rs. 1,499</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <button onclick="sendOrder(this, 'Matte Lipstick Set', 1499)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message">Your order has been confirmed! You will receive it in 3 to 6 days.</div>
+      </div>
+    </div>
+    
+    <!-- Makeup Kit -->
+    <div class="product" data-category="makeup">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>All-in-One Makeup Kit</h3>
+      <p>Includes eyeshadows, blush, highlighter, and more in one box.</p>
+      <div class="price">Rs. 2,899</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <button onclick="sendOrder(this, 'All-in-One Makeup Kit', 2899)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message">Your order has been confirmed! You will receive it in 3 to 6 days.</div>
+      </div>
+    </div>
+    
+    <!-- Eyeliner Set -->
+    <div class="product" data-category="makeup">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>Waterproof Eyeliner Set</h3>
+      <p>Long-lasting smudge-proof eyeliner pack of 3 colors.</p>
+      <div class="price">Rs. 899</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <button onclick="sendOrder(this, 'Waterproof Eyeliner Set', 899)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message">Your order has been confirmed! You will receive it in 3 to 6 days.</div>
+      </div>
+    </div>  
+    <div class="product" data-category="makeup">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>FABRIC Eyeliner Set</h3>
+      <p>Long-lasting smudge-proof eyeliner pack of 3 colors.</p>
+      <div class="price">Rs. 899</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <button onclick="sendOrder(this, 'Waterproof Eyeliner Set', 899)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message">Your order has been confirmed! You will receive it in 3 to 6 days.</div>
+      </div>
+    </div>      
+       
+    <div class="product" data-category="perfumes">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>Men Perfume</h3>
+      <p>Long-lasting fragrance with elegant packaging. Perfect for gifting!</p>
+      <div class="price">Rs. 3,499</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <button onclick="sendOrder(this, 'Luxury Perfume', 3499)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message"></div>
+      </div>
+    </div>
+    <div class="product" data-category="perfumes">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>Menss. Perfume</h3>
+      <p>Long-lasting fragrance with elegant packaging. Perfect for gifting!</p>
+      <div class="price">Rs. 3,499</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <button onclick="sendOrder(this, 'Luxury Perfume', 3499)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message"></div>
+      </div>
+    </div>
+    <div class="product" data-category="perfumes">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>Men 3 Perfume</h3>
+      <p>Long-lasting fragrance with elegant packaging. Perfect for gifting!</p>
+      <div class="price">Rs. 3,499</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <button onclick="sendOrder(this, 'Luxury Perfume', 3499)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message"></div>
+      </div>
+    </div>
+    <div class="product" data-category="perfumes">
+      <div class="slider">
+        <img class="slide active" src="---" alt="Perfume 1">
+        <img class="slide" src="---" alt="Perfume 2">
+        <img class="slide" src="---" alt="Perfume 3">
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+      </div>
+      <h3>Luxury women Perfume</h3>
+      <p>Long-lasting fragrance with elegant packaging. Perfect for gifting!</p>
+      <div class="price">Rs. 3,499</div>
+      <button onclick="showAddressForm(this)">Order Now</button>
+      <div class="address-form">
+        <input type="text" placeholder="Your Name" class="name-input">
+        <input type="number" placeholder="First Phone Number" class="phone-input">
+        <input type="number" placeholder="Second Phone Number" class="second-phone-input">
+        <input type="text" placeholder="Enter your full address" class="address-input">
+        <input type="text" placeholder="Enter Landmark Area" class="landmark-input">
+        <input type="number" placeholder="Enter your Quantity" class="quantity-input">
+        <button onclick="sendOrder(this, 'Luxury Perfume', 3499)">Confirm (WhatsApp)</button>
+        <div class="confirmation-message"></div>
+      </div>
+    </div>
+                      
+    
+    <div id="no-results" style="display:none; padding:20px; text-align:center; font-size:18px;">
+      ❌ Product not found. If you're looking for something else, please <a href="help.html" target="_blank" style="color:green ;">WhatsApp us</a> 💬
+    </div>
+    <!-- More Products -->
+  </main>
+ 
+<!-- Delivery Info -->
+<div style="
+  margin: 30px auto;
+  max-width: 600px;
+  padding: 15px 20px;
+  background: #f0f8ff;
+  border-left: 4px solid #25D366;
+  border-radius: 5px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+">
+  <h3 style="margin-bottom: 10px;">🚚 Fast Delivery</h3>
+  <p style="font-size: 16px;">We deliver all over Pakistan 🇵🇰 within <strong>3 to 6 working days</strong>.<br>
+  <strong>Cash on Delivery</strong> available on all orders!</p>
+</div>
+
+
+  
+
+
+
+        <!-- LINKED OR privacy-policy -->
+
+  <Script src="script.JS"></Script>
+  <div id="privacy-policy" style="display:none; padding: 20px; background: white; color: #2c3e50; max-width: 800px; margin: 30px auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 10px;">
+    <h2 style="text-align: center;">Privacy Policy</h2>
+    <p>We value your privacy. Any personal information you provide while ordering — including your name, phone number, address, and order details — will only be used to process your order and deliver your product.</p>
+    <p>We never share your information with third parties or use it for marketing without your permission.</p>
+    <p>If you have any questions about how we use your data, feel free to contact us through our WhatsApp support.</p>
+    <p style="text-align:center; margin-top:20px;">
+      <button onclick="togglePrivacy()" style="background:#2c3e50; color:white; padding:8px 15px; border:none; border-radius:5px;">Close</button>
+    </p>
+  </div>
+                   <!-- footer -->
+  <footer style="background-color:#2c3e50; color:white; padding:20px; text-align:center; margin-top: 40px;">
+    <p>&copy; 2025 Samo Online Store. All rights reserved.</p>
+    <p>
+      Follow us on 
+      <a href="https://facebook.com" target="_blank" style="color:#3498db; text-decoration:none;">Facebook</a> | 
+      <a href="https://instagram.com" target="_blank" style="color:#e84393; text-decoration:none;">Instagram</a> | 
+      <a href="https://wa.me/923291504030" target="_blank" style="color:#25D366; text-decoration:none;">WhatsApp</a> | 
+      <a href="#privacy-policy" onclick="togglePrivacy()" style="color: #f1c40f; text-decoration: none;">Privacy Policy</a>
+    </p>
+  </footer>
+    <!-- Your other content -->
+
+<!-- Scroll to Top Button -->
+<button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" style="
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: #25D366;
+color: white;
+border: none;
+padding: 10px 15px;
+border-radius: 50%;
+font-size: 20px;
+cursor: pointer;
+z-index: 999;
+" title="Go to top">↑</button>
+
+</body>
+</html>
+
+</body>
+</html>
